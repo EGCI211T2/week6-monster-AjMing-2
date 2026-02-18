@@ -27,13 +27,13 @@ int main(int argc, char* argv[]) {
    Thanos T;
   ++T;
   ++T;
-  //T.snap_finger(m,n);
+  T.snap_finger(m,n);
   ++T;
   ++T;
-  //T.snap_finger(m,n);
+  T.snap_finger(m,n);
     ++T;
   ++T;
- // T.snap_finger(m,n);//Clear hp n/2(half) of the monster. 
+  T.snap_finger(m,n);//Clear hp n/2(half) of the monster. 
 
  
   for(i=0;i<n;i++)

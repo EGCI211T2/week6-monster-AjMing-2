@@ -11,6 +11,7 @@ private:
 public:
 	void Attack(monster &);
     void heal();
+	void reset_hp(){ hp=0; }
 	monster(string="Name", int=5,int=1);
 	void display();
 };

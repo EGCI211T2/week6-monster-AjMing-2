@@ -14,8 +14,19 @@ public:
 	/ clear half of monster hp, if stone =6*/
 	void operator++(); // increase the stone;
 };
-void Thanos::snap_finger(monster m[],int ){
-
+void Thanos::snap_finger(monster m[],int n ){
+            if(stones<6){ 
+				cout<<"Sorry you don't have enough power"<<endl;
+			
+			}
+			else{
+				int i;
+				//sort the weakest ones up
+				//remove the first
+				for(i=0;i<n/2;i++ ){
+					m[i].reset_hp();
+				}
+			}
 
 }
 Thanos::Thanos(int n,int h ){ //stone hp
